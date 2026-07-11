@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html data-theme="retro">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,6 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 
     <title>payoo</title>
 
@@ -22,11 +23,23 @@
     <h1 class="text-3xl font-bold underline text-clifford text-center py-10">
         Hello world!
     </h1>
-    <div class="text-center">
+    <div class="text-center bg-primary/50">
         <button
-            class="btn">Click
+            class="btn btn-primary w-80 rounded-full">Click
             Me</button>
+            <button class="btn btn-error">Click Me</button>
+            <button class="btn btn-secondary btn-xl">Click Me</button>
+            <button class="btn btn-warning">Click Me</button>
+            <button class="btn btn-accent btn-outline">Click Me</button>
+            <button class="btn btn-neutral btn-soft btn-outline">Click Me</button>
     </div>
+    <details class="dropdown">
+        <summary class="btn m-1">open or close</summary>
+        <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+        </ul>
+    </details>
 </body>
 
 </html>
