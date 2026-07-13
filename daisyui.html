@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest - daisyUI</title>
+
+    <!-- Tailwind + DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-base-200">
+
+<!-- ================= NAVBAR ================= -->
+
+<div class="navbar bg-base-100 shadow-lg px-8">
+
+    <div class="flex-1">
+        <a class="text-3xl font-bold text-primary">
+            ShopNest
+        </a>
+    </div>
+
+    <div class="hidden md:flex">
+
+        <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Products</a></li>
+            <li><a>Categories</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+
+    </div>
+
+    <div class="flex gap-2">
+
+        <button class="btn btn-outline">
+            Cart
+        </button>
+
+        <label class="swap swap-rotate">
+
+            <input type="checkbox" id="themeToggle">
+
+            <svg class="swap-on h-6 w-6 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+
+                <path d="M5.64 17l-.71.71a1 1 0 101.41 1.41l.71-.71A1 1 0 005.64 17zM5 12H4a1 1 0 000 2h1a1 1 0 000-2zm7-7a1 1 0 001-1V3a1 1 0 10-2 0v1a1 1 0 001 1zm7.36 2.05a1 1 0 00-1.41-1.41l-.71.71a1 1 0 101.41 1.41l.71-.71zM20 11h-1a1 1 0 100 2h1a1 1 0 100-2zm-8 9a1 1 0 00-1 1v1a1 1 0 102 0v-1a1 1 0 00-1-1zM18.36 17a1 1 0 00-1.41 0l-.71.71a1 1 0 101.41 1.41l.71-.71a1 1 0 000-1.41zM12 6a6 6 0 100 12 6 6 0 000-12z"/>
+            </svg>
+
+            <svg class="swap-off h-6 w-6 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+
+                <path d="M21.64 13a1 1 0 00-1.05-.14A8 8 0 1111.14 3.4a1 1 0 00-.14-1.05A10 10 0 1022 14.05a1 1 0 00-.36-1.05z"/>
+            </svg>
+
+        </label>
+
+    </div>
+
+</div>
+
+<!-- ================= HERO ================= -->
+
+<div class="hero min-h-[70vh] bg-base-100">
+
+    <div class="hero-content flex-col lg:flex-row-reverse gap-12">
+
+        <img src="https://picsum.photos/600/500"
+             class="rounded-xl shadow-2xl"/>
+
+        <div>
+
+            <h1 class="text-6xl font-bold">
+                New Collection 2026
+            </h1>
+
+            <p class="py-6 text-lg">
+                Premium fashion, gadgets and accessories
+                delivered to your doorstep.
+            </p>
+
+            <button class="btn btn-primary btn-lg">
+                Shop Now
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="container mx-auto py-20 px-6">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+Categories
+</h2>
+
+<div class="grid md:grid-cols-4 gap-6">
+
+<div class="card bg-base-100 shadow-xl">
+<div class="card-body text-center">
+<div class="text-5xl">💻</div>
+<h2 class="card-title justify-center">Electronics</h2>
+</div>
+</div>
+
+<div class="card bg-base-100 shadow-xl">
+<div class="card-body text-center">
+<div class="text-5xl">👕</div>
+<h2 class="card-title justify-center">Fashion</h2>
+</div>
+</div>
+
+<div class="card bg-base-100 shadow-xl">
+<div class="card-body text-center">
+<div class="text-5xl">⌚</div>
+<h2 class="card-title justify-center">Accessories</h2>
+</div>
+</div>
+
+<div class="card bg-base-100 shadow-xl">
+<div class="card-body text-center">
+<div class="text-5xl">👟</div>
+<h2 class="card-title justify-center">Shoes</h2>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="container mx-auto px-6 pb-20">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+Featured Products
+</h2>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<div class="card bg-base-100 shadow-xl">
+
+<figure>
+<img src="https://picsum.photos/400?1">
+</figure>
+
+<div class="card-body">
+
+<h2 class="card-title">
+Wireless Headphone
+</h2>
+
+<p class="text-primary text-2xl font-bold">
+$99
+</p>
+
+<div class="card-actions justify-end">
+
+<button class="btn btn-primary">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card bg-base-100 shadow-xl">
+
+<figure>
+<img src="https://picsum.photos/400?2">
+</figure>
+
+<div class="card-body">
+
+<h2 class="card-title">
+Smart Watch
+</h2>
+
+<p class="text-primary text-2xl font-bold">
+$149
+</p>
+
+<div class="card-actions justify-end">
+<button class="btn btn-primary">
+Buy Now
+</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="card bg-base-100 shadow-xl">
+
+<figure>
+<img src="https://picsum.photos/400?3">
+</figure>
+
+<div class="card-body">
+
+<h2 class="card-title">
+Running Shoes
+</h2>
+
+<p class="text-primary text-2xl font-bold">
+$89
+</p>
+
+<div class="card-actions justify-end">
+<button class="btn btn-primary">
+Buy Now
+</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="card bg-base-100 shadow-xl">
+
+<figure>
+<img src="https://picsum.photos/400?4">
+</figure>
+
+<div class="card-body">
+
+<h2 class="card-title">
+Travel Backpack
+</h2>
+
+<p class="text-primary text-2xl font-bold">
+$59
+</p>
+
+<div class="card-actions justify-end">
+<button class="btn btn-primary">
+Buy Now
+</button>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<div class="stats shadow w-full rounded-none">
+
+<div class="stat place-items-center">
+<div class="stat-title">Customers</div>
+<div class="stat-value text-primary">25K+</div>
+</div>
+
+<div class="stat place-items-center">
+<div class="stat-title">Products</div>
+<div class="stat-value">1,200+</div>
+</div>
+
+<div class="stat place-items-center">
+<div class="stat-title">Orders</div>
+<div class="stat-value">150K+</div>
+</div>
+
+</div>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="container mx-auto py-20 px-6">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+What Customers Say
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="card bg-base-100 shadow-lg">
+<div class="card-body">
+<p>"Amazing quality and super fast delivery!"</p>
+<div class="font-bold mt-4">— Sarah</div>
+</div>
+</div>
+
+<div class="card bg-base-100 shadow-lg">
+<div class="card-body">
+<p>"The prices are great and customer support is excellent."</p>
+<div class="font-bold mt-4">— John</div>
+</div>
+</div>
+
+<div class="card bg-base-100 shadow-lg">
+<div class="card-body">
+<p>"One of the best online shopping experiences I've had."</p>
+<div class="font-bold mt-4">— Emma</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="hero bg-primary text-primary-content py-16">
+
+<div class="hero-content text-center">
+
+<div>
+
+<h2 class="text-4xl font-bold">
+Subscribe for Offers
+</h2>
+
+<p class="py-4">
+Get exclusive discounts every week.
+</p>
+
+<div class="join">
+
+<input
+class="input input-bordered join-item text-black"
+placeholder="Email">
+
+<button class="btn btn-neutral join-item">
+Subscribe
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer footer-center p-10 bg-neutral text-neutral-content">
+
+<aside>
+
+<h2 class="text-3xl font-bold">
+ShopNest
+</h2>
+
+<p>
+Copyright © 2026 - All rights reserved
+</p>
+
+</aside>
+
+</footer>
+
+<script>
+const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("change", function () {
+    document.documentElement.setAttribute(
+        "data-theme",
+        this.checked ? "dark" : "light"
+    );
+});
+</script>
+</body>
+</html>
