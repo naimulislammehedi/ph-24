@@ -18,9 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"
-        integrity="sha512-F/yRpRY8sctKzP7exU5PLGejwg/QtjDX6CIy/41nApe7JqdZgCcCzJTNq9Rcp/XwbeeTGillGevBakruY15pxA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <style>
         * {
@@ -39,12 +37,14 @@
             <div class="card-body">
                 <fieldset class="fieldset">
                     <label class="label text-neutral font-bold">Mobile Number</label>
-                    <input maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200" placeholder="Enter you 11 digit number" id="input-number"/>
+                    <input maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200"
+                        placeholder="Enter you 11 digit number" id="input-number" value="01234567890" />
 
                     <br>
 
                     <label class="label text-neutral font-bold">4 Digit Pin</label>
-                    <input type="password" class="input input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" maxlength="4" id="input-pin"/>
+                    <input type="password" class="input input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin"
+                        maxlength="4" id="input-pin" />
                     <div><a class="link link-hover">Forgot password?</a></div>
                     <button class="btn btn-primary mt-4 rounded-full" id="login-btn">Login</button>
                 </fieldset>
