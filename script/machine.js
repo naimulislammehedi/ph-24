@@ -4,3 +4,8 @@ function getValueFromInput(id){
     console.log(id, value); 
     return value; 
 } 
+
+// balance 
+function getBalance() {
+    
+}
